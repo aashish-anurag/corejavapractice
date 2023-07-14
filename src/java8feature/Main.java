@@ -18,7 +18,7 @@ public class Main {
 	    list.add( new User(301, "David", 43) );
 	    list.add( new User(710, "Alex", 50) );
 	    list.add( new User(604, "Brian", 80) );
-	    
+	    list.add(new User(606,"Sita",60));
 	    Comparator<User> cmpare = Comparator.comparing(User::getName).thenComparing(User::getAge).thenComparing(User::getRollno);
 	    
 	    list.stream().sorted(cmpare).collect(Collectors.toList()).forEach(a->System.out.println(a.name+" "+a.rollno+" "+a.age));
