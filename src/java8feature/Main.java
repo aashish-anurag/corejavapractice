@@ -18,6 +18,7 @@ public class Main {
 	    list.add( new User(301, "David", 43) );
 	    list.add( new User(710, "Alex", 50) );
 	    list.add( new User(604, "Brian", 80) );
+	    list.add(new User(704,"Ram",60));
 	    
 	    Comparator<User> cmpare = Comparator.comparing(User::getName).thenComparing(User::getAge).thenComparing(User::getRollno);
 	    
